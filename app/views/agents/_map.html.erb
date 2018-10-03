@@ -1,0 +1,158 @@
+<!-- Google Map Api -->
+<script>
+         function initMap() {
+         	var Nantes = {
+         		lat: 47.2173,
+         		lng: -1.5534
+         	};
+         	var map = new google.maps.Map(document.getElementById('map'), {
+         		zoom: 7,
+         		center: Nantes,
+         		styles: [{
+         				elementType: 'geometry',
+         				stylers: [{
+         					color: '#64DDBA'
+         				}]
+         			},
+         			{
+         				elementType: 'labels.text.stroke',
+         				stylers: [{
+         					color: '#fff	'
+         				}]
+         			},
+         			{
+         				elementType: 'labels.text.fill',
+         				stylers: [{
+         					color: '#34495E'
+         				}]
+         			},
+         			{
+         				featureType: 'administrative.locality',
+         				elementType: 'labels.text.fill',
+         				stylers: [{
+         					color: '#8A8A8A'
+         				}]
+         			},
+         			{
+         				featureType: 'poi',
+         				elementType: 'labels.text.fill',
+         				stylers: [{
+         					color: '#8A8A8A'
+         				}]
+         			},
+         			{
+         				featureType: 'poi.park',
+         				elementType: 'geometry',
+         				stylers: [{
+         					color: '#263c3f'
+         				}]
+         			},
+         			{
+         				featureType: 'poi.park',
+         				elementType: 'labels.text.fill',
+         				stylers: [{
+         					color: '#6b9a76'
+         				}]
+         			},
+         			{
+         				featureType: 'road',
+         				elementType: 'geometry',
+         				stylers: [{
+         					color: '#ABABAB'
+         				}]
+         			},
+         			{
+         				featureType: 'road',
+         				elementType: 'geometry.stroke',
+         				stylers: [{
+         					color: '#212a37'
+         				}]
+         			},
+         			{
+         				featureType: 'road',
+         				elementType: 'labels.text.fill',
+         				stylers: [{
+         					color: '#9ca5b3'
+         				}]
+         			},
+         			{
+         				featureType: 'road.highway',
+         				elementType: 'geometry',
+         				stylers: [{
+         					color: '#34495E'
+         				}]
+         			},
+         			{
+         				featureType: 'road.highway',
+         				elementType: 'geometry.stroke',
+         				stylers: [{
+         					color: '#1f2835'
+         				}]
+         			},
+         			{
+         				featureType: 'road.highway',
+         				elementType: 'labels.text.fill',
+         				stylers: [{
+         					color: '#f3d19c'
+         				}]
+         			},
+         			{
+         				featureType: 'transit',
+         				elementType: 'geometry',
+         				stylers: [{
+         					color: '#2f3948'
+         				}]
+         			},
+         			{
+         				featureType: 'transit.station',
+         				elementType: 'labels.text.fill',
+         				stylers: [{
+         					color: '#8A8A8A'
+         				}]
+         			},
+         			{
+         				featureType: 'water',
+         				elementType: 'geometry',
+         				stylers: [{
+         					color: '#F2F6FF'
+         				}]
+         			},
+         			{
+         				featureType: 'water',
+         				elementType: 'labels.text.fill',
+         				stylers: [{
+         					color: '#BCBCBC'
+         				}]
+         			},
+         			{
+         				featureType: 'water',
+         				elementType: 'labels.text.stroke',
+         				stylers: [{
+         					color: '#F2F6FF'
+         				}]
+         			}
+         		]
+         	});
+         	var contentString = '<div id="content">' +
+         		'<div id="bodyContent">' +
+         		'<div class="card card-list"><a href="#"><span class="badge badge-success">Disponible</span><%= image_tag "agent1.jpg", :class=> "card-img-top", :alt=> "Card image cap"%><div class="card-body"><h5 class="card-title">Agent de Sécurité Incendie</h5><h6 class="card-subtitle mb-2 text-muted"><i class="material-icons">my_location</i> 157 rue du croissant, 44300 Nantes</h6><h2 class="text-success mb-0 mt-3">$130,000 <small>/month</small></h2></div><div class="card-footer"><span><i class="material-icons">verified_user</i> SSIAP : <strong>1</strong></span><span><i class="material-icons">verified_user</i> SSIAP : <strong>1</strong></span></span><span><i class="mdi mdi-move-resize-variant"></i> Taille : <strong>1m90</strong></span></div></a> </div>' +
+         		'</div>' +
+         		'</div>';
+         
+         	var infowindow = new google.maps.InfoWindow({
+         		content: contentString,
+         		maxWidth: 300
+         	});
+         	var image = 'marker.png';
+         	var marker = new google.maps.Marker({
+         		position: Nantes,
+         		map: map,
+         		icon: "<%= asset_path('marker.png') %>"
+         	});
+         	marker.addListener('click', function() {
+         		infowindow.open(map, marker);
+         	});
+         }
+          
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUsOUkZbTEwLxeUN5Qfag6Vr5BjngCGMY&callback=initMap"></script>

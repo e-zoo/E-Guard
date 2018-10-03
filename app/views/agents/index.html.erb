@@ -13,7 +13,8 @@
       <header>
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-               <a class="navbar-brand text-success logo" href="index.html"><i class="material-icons">my_location</i><strong>E</strong>-Guard</a>
+               
+               <a><%= link_to image_tag("e-guard", alt: "Brand"), root_path, :class=>'navbar-brand text-success logo' %><strong>E</strong>-Guard</a>
                
                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -22,34 +23,37 @@
                   <ul class="navbar-nav mr-auto mt-2 mt-lg-0 margin-auto">
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        HOME
+                        AGENTS
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-                           <a class="dropdown-item" href="index1.html">Home With Search</a>
-                           <a class="dropdown-item" href="index2.html">Home With Map</a>
-                           <a class="dropdown-item" href="index3.html">Home With Property Info</a>
+                           <a class="dropdown-item" href="index1.html">Agent De Surveillance</a>
+                           <a class="dropdown-item" href="index2.html">Agent De Sécurité</a>
+                           <a class="dropdown-item" href="index3.html">Agent Sécurité Incendie</a>
+                           <a class="dropdown-item" href="index1.html">Agent de Gardiennage</a>
+                           <a class="dropdown-item" href="index1.html">Agent De Proximité</a>
+                           <a class="dropdown-item" href="index1.html">Agent Cynophile</a>
                         </div>
                      </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Properties
+                        Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-                           <a class="dropdown-item" href="properties-grid.html">Properties Grid</a>
-                           <a class="dropdown-item" href="properties-list.html">Properties List</a>
-                           <a class="dropdown-item" href="property-single-slider.html">Property Single Slider</a>
-                           <a class="dropdown-item" href="property-single-gallery.html">Property Single Gallery</a>
+                           <a class="dropdown-item" href="properties-grid.html">Devis</a>
+                           <a class="dropdown-item" href="properties-list.html">Selection</a>
+                           <a class="dropdown-item" href="property-single-slider.html">Pré-réservation</a>
+                           <a class="dropdown-item" href="property-single-gallery.html">Exigences</a>
                         </div>
                      </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Agency
+                        Agence
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-                           <a class="dropdown-item" href="agency-list.html">Agency List</a>
-                           <a class="dropdown-item" href="agency-profile.html">Agency Profile</a>
+                           <a class="dropdown-item" href="agency-list.html">Liste Agence</a>
+                           <a class="dropdown-item" href="agency-profile.html">Profile Agence</a>
                            <a class="dropdown-item" href="agents.html">Agents</a>
-                           <a class="dropdown-item" href="agent-profile.html">Agent Profile</a>
+                           <a class="dropdown-item" href="agent-profile.html">Prestataires</a>
                         </div>
                      </li>
                      <li class="nav-item dropdown">
@@ -58,40 +62,26 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
                            <a class="dropdown-item" href="blog.html">Blog</a>
-                           <a class="dropdown-item" href="blog-single.html">Blog Single</a>
+                           <a class="dropdown-item" href="blog-single.html">Formations SSIAP</a>
                         </div>
                      </li>
                      <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        My Account
+                        Mon Compte
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-                           <a class="dropdown-item" href="user-profile.html">User Profile</a>
-                           <a class="dropdown-item" href="social-profiles.html">Social Profiles</a>
-                           <a class="dropdown-item" href="my-properties.html">My Properties</a>
-                           <a class="dropdown-item" href="favorite-properties.html">Favorite Properties</a>
-                           <a class="dropdown-item" href="add-property.html">Add Property</a>
+                           <a class="dropdown-item" href="user-profile.html">Profile-Agent</a>
+                           <a class="dropdown-item" href="social-profiles.html">Les Missions</a>
+                           <a class="dropdown-item" href="my-properties.html">Dashboard</a>
                         </div>
                      </li>
-                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Pages
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
-                           <a class="dropdown-item" href="about.html">About Us</a>
-                           <a class="dropdown-item" href="faq.html">FAQ</a>
-                           <a class="dropdown-item" href="contact.html">Contact</a>
-                           <a class="dropdown-item" href="not-found.html">404 Page</a>
-                        </div>
-                     </li>
-                  </ul>
-                  <div class="my-2 my-lg-0">
+                  <div class="my-3 my-lg-3">
                      <ul class="list-inline main-nav-right">
                         <li class="list-inline-item">
-                           <a class="btn btn-link btn-sm" href="login.html">Sign In</a>
+                           <a class="btn btn-link btn-sm" href="login.html">Se Connecter</a>
                         </li>
                         <li class="list-inline-item">
-                           <a class="btn btn-success btn-sm" href="register.html">Sign Up</a>
+                           <a class="btn btn-success btn-sm" href="register.html">Se Déconncter</a>
                         </li>
                      </ul>
                   </div>
@@ -111,7 +101,7 @@
                         <div class="input-group">
                            <div class="input-group-addon"><i class="material-icons">my_location</i></div>
                            <select class="form-control select2" name="location">
-                              <option disabled="" selected="">Location</option>
+                              <option disabled="" selected="">Ville</option>
                               <option>Nantes</option>
                               <option>Angers</option>
                               <option>La Baule</option>
@@ -130,38 +120,92 @@
                      </div>
                      <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="input-group">
-                           <div class="input-group-addon"><i class="mdi mdi-city"></i></div>
+                           <div class="input-group-addon"><i class="material-icons">Language</i></div>
                            <select class="form-control select2" name="location">
-                              <option disabled="" selected="">Any Status</option>
-                              <option>Heigh</option>
-                              <option>Midium</option>
-                              <option>Normal</option>
+                              <option disabled="" selected="">Langue</option>
+                              <option>Français</option>
+                              <option>Arabe</option>
+                              <option>Espagnol</option>
+                              <option>Chinois</option>
                            </select>
                         </div>
                      </div>
                      <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="input-group">
-                           <div class="input-group-addon"><i class="mdi mdi-home-modern"></i></div>
+                           <div class="input-group-addon"><i class="material-icons">shedule</i></div>
                            <select class="form-control select2" name="location">
-                              <option disabled="" selected="">Any Type</option>
-                              <option>Property Types</option>
-                              <option value="">House/Villa</option>
-                              <option value="">Flat</option>
-                              <option value="">Plot/Land</option>
-                              <option value="">Office Space</option>
-                              <option value="">Shop/Showroom</option>
-                              <option value="">Commercial Land</option>
-                              <option value="">Warehouse/ Godown</option>
-                              <option value="">Industrial Building</option>
+                              <option disabled="" selected="">Spécialités</option>
+                              <option>Agent-type</option>
+                              <option value="">Agent de surveillance</option>
+                              <option value="">Agent de Sécurité</option>
+                              <option value="">Agent de Proximité</option>
+                              <option value="">Agent de Guardiennage</option>
+                              <option value="">Agent Cynophile</option>
+                              <option value="">Agent Diplomatique</option>
+                              <option value="">Agent de Sécurité Incendie</option>
                            </select>
                         </div>
                      </div>
                      <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="input-group">
-                           <div class="input-group-addon"><i class="mdi mdi-hotel"></i></div>
+                           <div class="input-group-addon"><i class="material-icons">person_pin_circle</i></div>
                            <select class="form-control select2" name="location">
-                              <option disabled="" selected="">Min. Bedrooms</option>
-                              <option>1</option>
+                              <option disabled="" selected="">Min Rayon</option>
+                              <option>1 km</option>
+                              <option>2 km</option>
+                              <option>3 km</option>
+                              <option>4 km</option>
+                              <option>5 km</option>
+                              <option>6 km</option>
+                              <option>7 km</option>
+                              <option>8 km</option>
+                              <option>9 km</option>
+                              <option>10 km</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="input-group">
+                           <div class="input-group-addon"><i class="material-icons">wc</i></div>
+                           <select class="form-control select2" name="location">
+                              <option disabled="" selected="">Min Rayon</option>
+                              <option>100m</option>
+                              <option>200m</option>
+                              <option>300m</option>
+                              <option>400m</option>
+                              <option>500m</option>
+                              <option>600m</option>
+                              <option>700m</option>
+                              <option>800m</option>
+                              <option>900m</option>
+                              <option>1000m</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="input-group">
+                           <div class="input-group-addon"><i class="material-icons">my_location</i></div>
+                           <select class="form-control select2" name="location">
+                              <option disabled="" selected="">Max Rayon</option>
+                              <option>1000m</option>
+                              <option>2000m</option>
+                              <option>3000m</option>
+                              <option>4000m</option>
+                              <option>5000m</option>
+                              <option>6000m</option>
+                              <option>7000m</option>
+                              <option>8000m</option>
+                              <option>9000m</option>
+                              <option>10000m</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+                        <div class="input-group">
+                           <div class="input-group-addon"><i class="material-icons">group</i></div>
+                           <select class="form-control select2" name="location">
+                              <option disabled="" selected="">Nb Agent</option>
+                              <option>Nb Agent</option>
                               <option>2</option>
                               <option>3</option>
                               <option>4</option>
@@ -176,61 +220,7 @@
                      </div>
                      <div class="col-lg-3 col-md-4 col-sm-6 col-6">
                         <div class="input-group">
-                           <div class="input-group-addon"><i class="mdi mdi-magnify-minus-outline"></i></div>
-                           <select class="form-control select2" name="location">
-                              <option disabled="" selected="">Min Size</option>
-                              <option>100</option>
-                              <option>200</option>
-                              <option>300</option>
-                              <option>400</option>
-                              <option>500</option>
-                              <option>600</option>
-                              <option>700</option>
-                              <option>800</option>
-                              <option>900</option>
-                              <option>1000</option>
-                           </select>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="input-group">
-                           <div class="input-group-addon"><i class="mdi mdi-magnify-plus-outline"></i></div>
-                           <select class="form-control select2" name="location">
-                              <option disabled="" selected="">Max Size</option>
-                              <option>1000</option>
-                              <option>2000</option>
-                              <option>3000</option>
-                              <option>4000</option>
-                              <option>5000</option>
-                              <option>6000</option>
-                              <option>7000</option>
-                              <option>8000</option>
-                              <option>9000</option>
-                              <option>10000</option>
-                           </select>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="input-group">
-                           <div class="input-group-addon"><i class="mdi mdi-hot-tub"></i></div>
-                           <select class="form-control select2" name="location">
-                              <option disabled="" selected="">Baths</option>
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                              <option>6</option>
-                              <option>7</option>
-                              <option>8</option>
-                              <option>9</option>
-                              <option>10</option>
-                           </select>
-                        </div>
-                     </div>
-                     <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                        <div class="input-group">
-                           <button type="submit" class="btn btn-success btn-block no-radius font-weight-bold">SEARCH</button>   
+                           <button type="submit" class="btn btn-success btn-block no-radius font-weight-bold">Chercher</button>   
                         </div>
                      </div>
                   </div>
@@ -242,7 +232,7 @@
       <!-- Properties List -->
       <section class="section-padding">
          <div class="section-title text-center mb-5">
-            <h2>Latest Properties</h2>
+            <h2>Agents Vérifié</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
          </div>
          <div class="container">
@@ -250,19 +240,39 @@
                <div class="col-lg-4 col-md-4">
                   <div class="card card-list">
                      <a href="#">
-                        <span class="badge badge-success">For Sale</span>
-                        <img class="card-img-top" src="img/list/1.png" alt="Card image cap">
+                        <span class="badge badge-success">Disponible</span>
+                        <%= image_tag "agent1.jpg", :class=> "card-img-top", :alt=> "Card image cap"%>
                         <div class="card-body">
-                           <h5 class="card-title">House in Kent Street</h5>
-                           <h6 class="card-subtitle mb-2 text-muted"><i class="mdi mdi-home-map-marker"></i> 127 Kent Sreet, Sydny, NEW 2000</h6>
+                           <h5 class="card-title">Agent de Sécurité Incendie</h5>
+                           <h6 class="card-subtitle mb-2 text-muted"><i class="material-icons">my_location</i> Nantes</h6>
                            <h2 class="text-success mb-0 mt-3">
-                              $130,000 <small>/month</small>
+                              €43,000 <small>/heure</small>
                            </h2>
                         </div>
                         <div class="card-footer">
-                           <span><i class="mdi mdi-sofa"></i> Beds : <strong>3</strong></span>
-                           <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>2</strong></span>
-                           <span><i class="mdi mdi-move-resize-variant"></i> Area : <strong>587 sq ft</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>1</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>2</strong></span>
+                           <span><i class="mdi mdi-move-resize-variant"></i> Rayon : <strong>30 km</strong></span>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+<div class="col-lg-4 col-md-4">
+                  <div class="card card-list">
+                     <a href="#">
+                        <span class="badge badge-secondary">Indisponible</span>
+                        <%= image_tag "agent1.jpg", :class=> "card-img-top", :alt=> "Card image cap"%>
+                        <div class="card-body">
+                           <h5 class="card-title">Agent de Proximité</h5>
+                           <h6 class="card-subtitle mb-2 text-muted"><i class="material-icons">my_location</i> Nantes</h6>
+                           <h2 class="text-success mb-0 mt-3">
+                              €43,000 <small>/heure</small>
+                           </h2>
+                        </div>
+                        <div class="card-footer">
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>1</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>2</strong></span>
+                           <span><i class="mdi mdi-move-resize-variant"></i> Rayon : <strong>30 km</strong></span>
                         </div>
                      </a>
                   </div>
@@ -270,61 +280,40 @@
                <div class="col-lg-4 col-md-4">
                   <div class="card card-list">
                      <a href="#">
-                        <span class="badge badge-secondary">For Rent</span>
-                        <img class="card-img-top" src="img/list/2.png" alt="Card image cap">
+                        <span class="badge badge-success">Disponible</span>
+                        <%= image_tag "agent1.jpg", :class=> "card-img-top", :alt=> "Card image cap"%>
                         <div class="card-body">
-                           <h5 class="card-title">Family House in Hudson</h5>
-                           <h6 class="card-subtitle mb-2 text-muted"><i class="mdi mdi-home-map-marker"></i> Hoboken, NJ, USA</h6>
+                           <h5 class="card-title">Agent de Surveillance</h5>
+                           <h6 class="card-subtitle mb-2 text-muted"><i class="material-icons">my_location</i> Nantes</h6>
                            <h2 class="text-success mb-0 mt-3">
-                              $127,000 <small>/month</small>
+                              €43,000 <small>/heure</small>
                            </h2>
                         </div>
                         <div class="card-footer">
-                           <span><i class="mdi mdi-sofa"></i> Beds : <strong>5</strong></span>
-                           <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>3</strong></span>
-                           <span><i class="mdi mdi-move-resize-variant"></i> Area : <strong>300 sq ft</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>1</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>2</strong></span>
+                           <span><i class="mdi mdi-move-resize-variant"></i> Rayon : <strong>30 km</strong></span>
                         </div>
                      </a>
                   </div>
                </div>
-               <div class="col-lg-4 col-md-4">
-                  <div class="card card-list">
-                     <a href="#">
-                        <span class="badge badge-success">For Sale</span>
-                        <img class="card-img-top" src="img/list/3.png" alt="Card image cap">
-                        <div class="card-body">
-                           <h5 class="card-title">Loft Above The City</h5>
-                           <h6 class="card-subtitle mb-2 text-muted"><i class="mdi mdi-home-map-marker"></i> Hope Street (Stop P), London SW11, UK</h6>
-                           <h2 class="text-success mb-0 mt-3">
-                              $55,000 <small>/month</small>
-                           </h2>
-                        </div>
-                        <div class="card-footer">
-                           <span><i class="mdi mdi-sofa"></i> Beds : <strong>2</strong></span>
-                           <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>1</strong></span>
-                           <span><i class="mdi mdi-move-resize-variant"></i> Area : <strong>100 sq ft</strong></span>
-                        </div>
-                     </a>
-                  </div>
-               </div>
-            </div>
             <div class="row">
                <div class="col-lg-4 col-md-4">
                   <div class="card card-list">
                      <a href="#">
-                        <span class="badge badge-danger">For Sale</span>
-                        <img class="card-img-top" src="img/list/4.png" alt="Card image cap">
+                        <span class="badge badge-danger">Disponible</span>
+                        <%= image_tag "agent1.jpg", :class=> "card-img-top", :alt=> "Card image cap"%>
                         <div class="card-body">
-                           <h5 class="card-title">Store Space Greenville</h5>
-                           <h6 class="card-subtitle mb-2 text-muted"><i class="mdi mdi-home-map-marker"></i> 250-260 3rd St, Hoboken, NJ 07030, USA</h6>
+                           <h5 class="card-title">Agent de Surveillance</h5>
+                           <h6 class="card-subtitle mb-2 text-muted"><i class="material-icons">my_location</i> Nantes</h6>
                            <h2 class="text-success mb-0 mt-3">
-                              $25,000 <small>/month</small>
+                              €43,000 <small>/heure</small>
                            </h2>
                         </div>
                         <div class="card-footer">
-                           <span><i class="mdi mdi-sofa"></i> Beds : <strong>6</strong></span>
-                           <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>4</strong></span>
-                           <span><i class="mdi mdi-move-resize-variant"></i> Area : <strong>987 sq ft</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>1</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>2</strong></span>
+                           <span><i class="mdi mdi-move-resize-variant"></i> Rayon : <strong>30 km</strong></span>
                         </div>
                      </a>
                   </div>
@@ -332,19 +321,19 @@
                <div class="col-lg-4 col-md-4">
                   <div class="card card-list">
                      <a href="#">
-                        <span class="badge badge-warning">For Rent</span>
-                        <img class="card-img-top" src="img/list/5.png" alt="Card image cap">
+                        <span class="badge badge-success">Disponible</span>
+                        <%= image_tag "agent1.jpg", :class=> "card-img-top", :alt=> "Card image cap"%>
                         <div class="card-body">
-                           <h5 class="card-title">Villa in Melbourne</h5>
-                           <h6 class="card-subtitle mb-2 text-muted"><i class="mdi mdi-home-map-marker"></i> NJ 07305, USA</h6>
+                           <h5 class="card-title">Agent de Surveillance</h5>
+                           <h6 class="card-subtitle mb-2 text-muted"><i class="material-icons">my_location</i> Nantes</h6>
                            <h2 class="text-success mb-0 mt-3">
-                              $12,000 <small>/month</small>
+                              €43,000 <small>/heure</small>
                            </h2>
                         </div>
                         <div class="card-footer">
-                           <span><i class="mdi mdi-sofa"></i> Beds : <strong>8</strong></span>
-                           <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>4</strong></span>
-                           <span><i class="mdi mdi-move-resize-variant"></i> Area : <strong>120 sq ft</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>1</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>2</strong></span>
+                           <span><i class="mdi mdi-move-resize-variant"></i> Max-Rayon : <strong>30 km</strong></span>
                         </div>
                      </a>
                   </div>
@@ -352,19 +341,19 @@
                <div class="col-lg-4 col-md-4">
                   <div class="card card-list">
                      <a href="#">
-                        <span class="badge badge-info">For Rent</span>
-                        <img class="card-img-top" src="img/list/6.png" alt="Card image cap">
+                        <span class="badge badge-success">Disponible</span>
+                        <%= image_tag "agent1.jpg", :class=> "card-img-top", :alt=> "Card image cap"%>
                         <div class="card-body">
-                           <h5 class="card-title">Villa on Hollywood Boulev</h5>
-                           <h6 class="card-subtitle mb-2 text-muted"><i class="mdi mdi-home-map-marker"></i> The Village, Jersey City, NJ 07302, USA</h6>
+                           <h5 class="card-title">Agent de Surveillance</h5>
+                           <h6 class="card-subtitle mb-2 text-muted"><i class="material-icons">my_location</i> Nantes</h6>
                            <h2 class="text-success mb-0 mt-3">
-                              $356, 000 <small>/month</small>
+                              €43,000 <small>/heure</small>
                            </h2>
                         </div>
                         <div class="card-footer">
-                           <span><i class="mdi mdi-sofa"></i> Beds : <strong>1</strong></span>
-                           <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>3</strong></span>
-                           <span><i class="mdi mdi-move-resize-variant"></i> Area : <strong>187 sq ft</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>1</strong></span>
+                           <span><i class="material-icons">verified_user</i> SSIAP : <strong>2</strong></span>
+                           <span><i class="mdi mdi-move-resize-variant"></i> Max-Rayon : <strong>30 km</strong></span>
                         </div>
                      </a>
                   </div>
@@ -442,26 +431,26 @@
             <div class="row">
                <div class="col-lg-4 col-md-4">
                   <div class="agents-card text-center">
-                     <img class="img-fluid mb-4" src="img/user/1.jpg" alt="">
+                     <%= image_tag "agent4.jpeg", :class=> "img-fluid mb-4"%>
                      <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                     <h6 class="mb-0 text-success">- Stave Martin</h6>
-                     <small>Buying Agent</small>
+                     <h6 class="mb-0 text-success">- Oullami Mohamed</h6>
+                     <small>Directeur Génral</small>
                   </div>
                </div>
                <div class="col-lg-4 col-md-4">
                   <div class="agents-card text-center">
-                     <img class="img-fluid mb-4" src="img/user/2.jpg" alt="">
+                     <%= image_tag "agent4.jpeg", :class=> "img-fluid mb-4"%>
                      <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                     <h6 class="mb-0 text-success">- Mark Smith</h6>
-                     <small>Selling Agent</small>
+                     <h6 class="mb-0 text-success">- Oullami Mohamed</h6>
+                     <small>Directeur Génral</small>
                   </div>
                </div>
                <div class="col-lg-4 col-md-4">
                   <div class="agents-card text-center">
-                     <img class="img-fluid mb-4" src="img/user/3.jpg" alt="">
+                     <%= image_tag "agent4.jpeg", :class=> "img-fluid mb-4"%>
                      <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.</p>
-                     <h6 class="mb-0 text-success">- Ryan Printz</h6>
-                     <small>Real Estate Broker</small>
+                     <h6 class="mb-0 text-success">- Oullami Mohamed</h6>
+                     <small>Directeur Génral</small>
                   </div>
                </div>
             </div>
@@ -471,7 +460,7 @@
       <!-- Blog -->
       <section class="section-padding border-top">
          <div class="section-title text-center mb-5">
-            <h2>Blogs We Wrote For You</h2>
+            <h2>Blog</h2>
             <p>Lorem ipsum dolor sit amet.</p>
          </div>
          <div class="container">
@@ -537,17 +526,17 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-4 col-md-3">
-                  <h4 class="mb-5"><a class="text-success logo" href="index.html"><i class="mdi mdi-home-map-marker"></i> <strong>Osahan</strong>Land</a></h4>
-                  <p>86 Petersham town, New South wales<br>Waedll Steet, Australia PA 6550</p>
-                  <p class="mb-0"><a class="text-dark" href="#">+61 525 240 310</a></p>
-                  <p class="mb-0"><a class="text-success" href="#">iamosahan@gmail.com</a></p>
-                  <p class="mb-0"><a class="text-info" href="#">www.askbootstrap.com</a></p>
+                  <h4 class="mb-5"><a class="text-success logo" href="index.html"><i class="mdi mdi-home-map-marker"></i> <strong>Infinitydev44</strong></a></h4>
+                  <p>157 rue du croissant, Nantes<br>Loire-Atlantique, France 44300</p>
+                  <p class="mb-0"><a class="text-dark" href="#">+33 07 67 03 68 48</a></p>
+                  <p class="mb-0"><a class="text-success" href="#">infinitydev44@gmail.com</a></p>
+                  <p class="mb-0"><a class="text-info" href="#">www.eguard.herokuapp.com.com</a></p>
                </div>
                <div class="col-lg-2 col-md-2">
                   <h6 class="mb-4">COMPANY</h6>
                   <ul>
-                  <li><a href="#">About us</a></li>
-                  <li><a href="#">Career</a></li>
+                  <li><a href="#">A propos</a></li>
+                  <li><a href="#">Carière</a></li>
                   <li><a href="#">Services</a></li>
                   <li><a href="#">Properties</a></li>
                   <li><a href="#">Contact</a></li>
@@ -585,182 +574,12 @@
       <!-- End Footer -->
       <!-- Copyright -->
       <section class="pt-4 pb-4 text-center">
-         <p class="mt-0 mb-0">© Copyright 2018 OsahanLand. All Rights Reserved</p>
+         <p class="mt-0 mb-0">© Copyright 2018 Infinitydev44. All Rights Reserved</p>
          <small class="mt-0 mb-0">
          Made with <i class="mdi mdi-heart text-danger"></i>	by 
          <a class="text-dark" target="_blank" href="https://askbootstrap.com/">Ask Bootstrap</a>
          </small>
       </section>
-      <!-- End Copyright -->
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <!-- Contact form JavaScript -->
-      <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-      <script src="js/jqBootstrapValidation.js"></script>
-      <script src="js/contact_me.js"></script>
-      <!-- select2 Js -->
-      <script src="vendor/select2/js/select2.min.js"></script>
-      <!-- Custom -->
-      <script src="js/custom.js"></script>
-      <!-- Google Map Api -->
-      <script>
-         function initMap() {
-         	var uluru = {
-         		lat: -25.363,
-         		lng: 131.044
-         	};
-         	var map = new google.maps.Map(document.getElementById('map'), {
-         		zoom: 3,
-         		center: uluru,
-         		styles: [{
-         				elementType: 'geometry',
-         				stylers: [{
-         					color: '#64DDBA'
-         				}]
-         			},
-         			{
-         				elementType: 'labels.text.stroke',
-         				stylers: [{
-         					color: '#64DDBA'
-         				}]
-         			},
-         			{
-         				elementType: 'labels.text.fill',
-         				stylers: [{
-         					color: '#34495E'
-         				}]
-         			},
-         			{
-         				featureType: 'administrative.locality',
-         				elementType: 'labels.text.fill',
-         				stylers: [{
-         					color: '#8A8A8A'
-         				}]
-         			},
-         			{
-         				featureType: 'poi',
-         				elementType: 'labels.text.fill',
-         				stylers: [{
-         					color: '#8A8A8A'
-         				}]
-         			},
-         			{
-         				featureType: 'poi.park',
-         				elementType: 'geometry',
-         				stylers: [{
-         					color: '#263c3f'
-         				}]
-         			},
-         			{
-         				featureType: 'poi.park',
-         				elementType: 'labels.text.fill',
-         				stylers: [{
-         					color: '#6b9a76'
-         				}]
-         			},
-         			{
-         				featureType: 'road',
-         				elementType: 'geometry',
-         				stylers: [{
-         					color: '#ABABAB'
-         				}]
-         			},
-         			{
-         				featureType: 'road',
-         				elementType: 'geometry.stroke',
-         				stylers: [{
-         					color: '#212a37'
-         				}]
-         			},
-         			{
-         				featureType: 'road',
-         				elementType: 'labels.text.fill',
-         				stylers: [{
-         					color: '#9ca5b3'
-         				}]
-         			},
-         			{
-         				featureType: 'road.highway',
-         				elementType: 'geometry',
-         				stylers: [{
-         					color: '#34495E'
-         				}]
-         			},
-         			{
-         				featureType: 'road.highway',
-         				elementType: 'geometry.stroke',
-         				stylers: [{
-         					color: '#1f2835'
-         				}]
-         			},
-         			{
-         				featureType: 'road.highway',
-         				elementType: 'labels.text.fill',
-         				stylers: [{
-         					color: '#f3d19c'
-         				}]
-         			},
-         			{
-         				featureType: 'transit',
-         				elementType: 'geometry',
-         				stylers: [{
-         					color: '#2f3948'
-         				}]
-         			},
-         			{
-         				featureType: 'transit.station',
-         				elementType: 'labels.text.fill',
-         				stylers: [{
-         					color: '#8A8A8A'
-         				}]
-         			},
-         			{
-         				featureType: 'water',
-         				elementType: 'geometry',
-         				stylers: [{
-         					color: '#F2F6FF'
-         				}]
-         			},
-         			{
-         				featureType: 'water',
-         				elementType: 'labels.text.fill',
-         				stylers: [{
-         					color: '#BCBCBC'
-         				}]
-         			},
-         			{
-         				featureType: 'water',
-         				elementType: 'labels.text.stroke',
-         				stylers: [{
-         					color: '#F2F6FF'
-         				}]
-         			}
-         		]
-         	});
-         	var contentString = '<div id="content">' +
-         		'<div id="bodyContent">' +
-         		'<div class="card card-list"><a href="#"><span class="badge badge-success">For Sale</span><img class="card-img-top" src="img/list/4.png" alt="Card image cap"><div class="card-body"><h5 class="card-title">House in Kent Street</h5><h6 class="card-subtitle mb-2 text-muted"><i class="mdi mdi-home-map-marker"></i> 127 Kent Sreet, Sydny, NEW 2000</h6><h2 class="text-success mb-0 mt-3">$130,000 <small>/month</small></h2></div><div class="card-footer"><span><i class="mdi mdi-sofa"></i> Beds : <strong>3</strong></span><span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>2</strong></span><span><i class="mdi mdi-move-resize-variant"></i> Area : <strong>587 sq ft</strong></span></div></a> </div>' +
-         		'</div>' +
-         		'</div>';
-         
-         	var infowindow = new google.maps.InfoWindow({
-         		content: contentString,
-         		maxWidth: 300
-         	});
-         	var image = 'img/marker.png';
-         	var marker = new google.maps.Marker({
-         		position: uluru,
-         		map: map,
-         		icon: image
-         	});
-         	marker.addListener('click', function() {
-         		infowindow.open(map, marker);
-         	});
-         }
-          
-      </script>
-      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUsOUkZbTEwLxeUN5Qfag6Vr5BjngCGMY&callback=initMap"></script>
+      <%= render 'map'%>
    </body>
 </html>
-
