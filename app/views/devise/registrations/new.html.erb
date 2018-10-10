@@ -1,0 +1,102 @@
+<!-- Registration Form -->
+<body style="background-image: url(/assets/agent2.jpg);">
+<section class="section-padding bg-green inner-header">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 text-center">
+					<div class="mt-0 mb-3 text-white"">
+						<h6 class="a-93 text-center text-white">S'inscrire en<br/> tant qu'agent </h6>
+					</div>
+                  	<div class="breadcrumbs">
+                     	<p class="mb-0 text-white"><%= link_to "Home", root_path, :class=> "text-white"%>  /  <span class="text-success">S'inscrire</span></p>
+                  </div>
+               	</div>
+            </div>
+        </div>
+    </section>
+	<section class="section-padding">
+        <div class="container">
+        	<div class="row">
+    			<div class="col-lg-12 col-md-4">
+					<div class="ui-150">
+								<div class="form-group">
+									<%= form_for("agent", url: registration_path("agent")) do |f| %>
+										<%= devise_error_messages! %>
+								
+										<!--Coordonnées-->
+										<div class="form-group">
+											<center><%= f.label :name %></center><br />
+											<%= f.text_field :name, placeholder: "Name", class: "form-control text-center" %>
+										</div>
+										<div class="form-group">
+											<center><%= f.label :phone %></center><br />
+											<%= f.text_field :phone, placeholder: "téléphone", class: "form-control text-center" %>
+										</div>
+										<div class="form-group">
+											<center><%= f.label :zipcode %></center><br />
+											<%= f.text_field :zipcode, placeholder: "Code-Postal", class: "form-control text-center" %>
+										</div>
+										<div class="form-group">
+											<center><%= f.label :state %></center><br />
+											<%= f.text_field :state, placeholder: "Département", class: "form-control text-center" %>
+										</div>
+										<div class="form-group">
+											<center><%= f.label :city %></center><br />
+											<%= f.text_field :city, placeholder: "Ville", class: "form-control text-center" %>
+										</div>
+										<div class="form-group">
+											<center><%= f.label :adress1 %></center><br />
+											<%= f.text_field :adress1, placeholder: "Adresse(1)", class: "form-control text-center" %>
+										</div>
+										<div class="form-group">
+											<center><%= f.label :adress2 %></center><br />
+											<%= f.text_field :adress2, placeholder: "Adresse(2)", class: "form-control text-center" %>
+										</div>
+
+											<!--Email-->
+										<div class="form-group">
+											<center><%= f.label :email %></center><br>
+											<%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control text-center" %>
+										</div>
+
+											<!-- Password-->
+										<div class="form-group text-center">
+												<%= f.label :password %>
+											<% if @minimum_password_length %>
+												(<%= @minimum_password_length %> characters minimum)
+											<% end %>
+												<%= f.password_field :password, autocomplete: "new-password", class: "form-control text-center"%>
+										</div>
+										<div class="form-group text-center">
+												<%= f.label :password_confirmation, class: "text-center" %>
+												<%= f.password_field :password_confirmation, autocomplete: "new-password", class: "form-control text-center" %>
+										</div>
+
+											<!--Expériences-->
+										<div class="form-group text-center">
+											<%= f.label :experience %><br />
+											<%= f.text_area :experience, placeholder: "Expériences", class: "form-control text-center" %>
+										</div>
+												<%= f.submit "Sign up", :class=>"btn btn-block" %><br />
+										<div class="checkbox">
+										<center><label>
+												<input type="checkbox"> Accept Terms &amp; Conditions
+										</label></center><br />
+										<div class="col-lg-12 col-md-8">
+											<div class="card">
+												<div class="card-body">
+													<div id="map"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							<% end %>
+            				</div>
+         				</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+</body>	

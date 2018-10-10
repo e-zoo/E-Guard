@@ -1,0 +1,81 @@
+/* UI X */
+body{
+	background:url("../img/ui-150/background.jpg") no-repeat;
+	background-attachment:fixed;
+	background-size:cover;
+}
+.ui-150{
+    margin:50px 0px;
+    background-color: #2c3e50;
+}
+.ui-150 .ui-form{
+	max-width:300px;
+	margin:30px auto;
+	background:rgba(255,255,255,0.2);	
+	padding:20px 25px;
+	border:1px solid rgba(255,255,255,0.2);
+	border-radius:5px;
+	box-shadow:0px 0px 10px rgba(255,255,255,0.05);
+}
+.ui-150 .ui-form h3{
+	font-size:13px;
+	line-height:13px;
+	margin:15px 0px 25px 0px;
+	text-transform:uppercase;
+	color:#fff;
+}
+.ui-150 form{
+	margin-bottom:15px;
+	color:#fff;
+}
+.ui-150 form input,
+.ui-150 form textarea{
+	box-shadow:none !important;
+	padding:6px 5px;
+	color:#fff;
+	border:0px;
+	border-bottom:1px solid rgba(255,255,255,0.5);
+	background:transparent;
+	border-radius:0px;
+}
+.ui-150 form ::-webkit-input-placeholder {
+   color: rgba(255,255,255,0.5);
+}
+.ui-150 form ::-moz-placeholder {  
+   color: rgba(255,255,255,0.5);
+}
+.ui-150 form :-ms-input-placeholder {  
+   color: rgba(255,255,255,0.5);
+}
+.ui-150 form .btn{
+	border:0px;
+	border-radius:25px;
+	padding:10px 20px;
+	border:1px solid rgba(255,255,255,0.5);
+	color:#fff;
+	text-transform:uppercase;
+	font-weight:600;
+	background:transparent;
+	margin-top:15px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	transition: all 0.5s ease;	
+}
+.ui-150 form .btn:hover{
+	background:#43EBBC;
+	color:#fff;
+}
+.ui-150 .social a{
+	display:block;
+	margin-bottom:15px;
+	color:#fff;
+	padding:8px 20px;
+	border-radius:25px;
+	text-align:center;
+	font-size:12px;
+	text-transform:uppercase;
+	font-weight:600;
+}
+

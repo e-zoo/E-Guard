@@ -1,0 +1,81 @@
+    <!-- Navbar -->
+      <header>
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+               
+               <div class='row-eguard'><a><%= link_to image_tag("e-guard", alt: "Brand"), root_path, :class=>'navbar-brand text-success logo' %><strong>E</strong>-Guard</a></div>
+               
+               <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0 margin-auto">
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        AGENTS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                           <a class="dropdown-item"><%=link_to "s'inscrire", new_agent_path, :class=>"dropdown-item"%></a>
+                           <%# <a class="dropdown-item" href="index2.html">Agent De Sécurité</a>
+                           <a class="dropdown-item" href="index3.html">Agent Sécurité Incendie</a>
+                           <a class="dropdown-item" href="index1.html">Agent de Gardiennage</a>
+                           <a class="dropdown-item" href="index1.html">Agent De Proximité</a>
+                           <a class="dropdown-item" href="index1.html">Agent Cynophile</a> %>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                           <a class="dropdown-item" href="properties-grid.html">Devis</a>
+                           <a class="dropdown-item" href="properties-list.html">Selection</a>
+                           <a class="dropdown-item" href="property-single-slider.html">Pré-réservation</a>
+                           <a class="dropdown-item" href="property-single-gallery.html">Exigences</a>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Agence
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                           <a class="dropdown-item" href="agency-list.html">Liste Agence</a>
+                           <a class="dropdown-item" href="agency-profile.html">Profile Agence</a>
+                           <a class="dropdown-item" href="agents.html">Agents</a>
+                           <a class="dropdown-item" href="agent-profile.html">Prestataires</a>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Blog
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                           <a class="dropdown-item" href="blog.html">Blog</a>
+                           <a class="dropdown-item" href="blog-single.html">Formations SSIAP</a>
+                        </div>
+                     </li>
+                     <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Mon Compte
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownPortfolio">
+                           <a class="dropdown-item" href="user-profile.html">Profile-Agent</a>
+                           <a class="dropdown-item" href="social-profiles.html">Les Missions</a>
+                           <a class="dropdown-item" href="my-properties.html">Dashboard</a>
+                        </div>
+                     </li>
+                  <div class="my-3 my-lg-3">
+                     <ul class="list-inline main-nav-right">
+                        <li class="list-inline-item">
+                           <%= link_to "se connecter", new_agent_session_path, :class=> "btn btn-link btn-sm"%>
+                        </li>
+                        <li class="list-inline-item">
+                           <%= link_to "s'enregister", new_agent_registration_path, :class=> "btn btn-success btn-sm"%>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- End Navbar -->
