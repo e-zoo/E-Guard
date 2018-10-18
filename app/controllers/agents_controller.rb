@@ -11,6 +11,13 @@ class AgentsController < ApplicationController
         @agent = Agent.new(agent_params)
         @agent.save
         redirect_to @agent
+        super
+        if current_agent
+          current_agent.image_resto.attach(
+            io: File.open("app/assets/images/e-guard.png"),
+            filename: "avatar-resto.png"
+          )
+    end
     end
 
     def show

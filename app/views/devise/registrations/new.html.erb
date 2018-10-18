@@ -52,6 +52,14 @@
 											<center><%= f.label :adress2 %></center><br />
 											<%= f.text_field :adress2, placeholder: "Adresse(2)", class: "form-control text-center" %>
 										</div>
+										<%= form_for:specialties do |t| %>
+										 <!--Specialties-->
+										<div class="form-group">
+											<center><%= f.label :name %></center><br />
+											<%= f.text_field :name, placeholder: "Spécialités", class: "form-control text-center" %>
+										</div>
+
+                                        <%end%>
 
 											<!--Email-->
 										<div class="form-group">
