@@ -2,8 +2,9 @@
       <header>
          <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-               
-               <div class='row-eguard'><a><%= link_to image_tag'e-guard.png', root_path, :class=>'navbar-brand text-success logo' %><strong>E</strong>-Guard</a></div>
+              <%= link_to root_url do %>
+               <%= image_tag 'e-guard.png', class:'navbar-brand text-success logo'%>
+                <% end %>
                
                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
