@@ -10,7 +10,7 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require vendors/bootstrap.min
+//= require vendors/bootstrap
 //= require custom
 //= require vendors/jquery.min
 //= require vendors/respond.min
